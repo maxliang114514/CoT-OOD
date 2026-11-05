@@ -1,0 +1,14 @@
+You are given a sequence of operations to perform on a symbol list.
+Follow the format of the example below step by step.
+
+Definitions of atomic operations:
+1. Reverse: Reverse the sequence order.
+2. Substitute: Apply pairwise swaps {α↔β, γ↔δ, ε↔ω}.
+3. Duplicate: Copy each symbol consecutively (e.g., αβγ → ααββγγ).
+4. Deduplicate: Remove consecutive duplicate elements.
+5. Rotate: Move the first element to the end.
+
+Your task is to predict the final output sequence after applying all operations step by step.
+Now solve this problem:
+Input Sequence: [{input_sequence}]
+Task Chain: [{task_chain}]

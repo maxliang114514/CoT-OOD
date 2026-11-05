@@ -1,0 +1,21 @@
+You are given a sequence of operations to perform on a symbol list.
+Follow the format of the example below step by step.
+
+Definitions of atomic operations:
+1. Reverse: Reverse the sequence order.
+2. Substitute: Apply pairwise swaps {α↔β, γ↔δ, ε↔ω}.
+3. Duplicate: Copy each symbol consecutively (e.g., αβγ → ααββγγ).
+4. Deduplicate: Remove consecutive duplicate elements.
+5. Rotate: Move the first element to the end.
+
+Example:
+Input Sequence: [αβγ]
+Task Chain: [Duplicate → Reverse → Substitute]
+Step 1: [Duplicate] Task_Chain: [......, ......] | Input_Sequence: [αβγ] | → Output_Sequence: [ααββγγ] | Task_Chain: [......, ......]
+Step 2: [Reverse] Task_Chain: [......] | Input_Sequence: [ααββγγ] | → Output_Sequence: [γγββαα] | Task_Chain: [......]
+Step 3: [Substitute] Task_Chain: [] | Input_Sequence: [γγββαα] | → Output_Sequence: [δδααββ] | Task_Chain: []
+Final Answer: [δδααββ]
+
+Now solve this problem:
+Input Sequence: [{input_sequence}]
+Task Chain: [{task_chain}]

@@ -1,0 +1,13 @@
+You are given a sequence of operations to perform on a symbol list.
+Definitions of atomic operations:
+1. Reverse: Reverse the sequence order.
+2. Substitute: Apply pairwise swaps {α↔β, γ↔δ, ε↔ω}.
+3. Duplicate: Copy each symbol consecutively (e.g., αβγ → ααββγγ).
+4. Deduplicate: Remove consecutive duplicate elements.
+5. Rotate: Move the first element to the end.
+
+Now solve this problem:
+Input Sequence: [{input_sequence}]
+Task Chain: [{task_chain}]
+
+Provide the final answer directly without showing reasoning steps.

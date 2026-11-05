@@ -1,0 +1,38 @@
+You are given a sequence of operations to perform on a symbol list.
+Follow the format of the example below step by step.
+
+Definitions of atomic operations:
+1. Reverse: Reverse the sequence order.
+2. Substitute: Apply pairwise swaps {α↔β, γ↔δ, ε↔ω}.
+3. Duplicate: Copy each symbol consecutively (e.g., αβγ → ααββγγ).
+4. Deduplicate: Remove consecutive duplicate elements.
+5. Rotate: Move the first element to the end.
+
+Example 1:
+Input Sequence: [γγγααε]
+Task Chain: [Reverse → Rotate → Rotate]
+Step 1: Task_Chain: [Reverse, Rotate, Rotate] | Input_Sequence: [γγγααε] | → Output_Sequence: [εααγγγ] | Task_Chain: [Rotate, Rotate]
+Step 2: Task_Chain: [Rotate, Rotate] | Input_Sequence: [εααγγγ] | → Output_Sequence: [ααγγγε] | Task_Chain: [Rotate]
+Step 3: Task_Chain: [Rotate] | Input_Sequence: [ααγγγε] | → Output_Sequence: [αγγγεα] | Task_Chain: []
+Final Answer: [αγγγεα]
+
+Example 2:
+Input Sequence: [δγγδεα]
+Task Chain: [Rotate → Substitute → Substitute]
+Step 1: Task_Chain: [Rotate, Substitute, Substitute] | Input_Sequence: [δγγδεα] | → Output_Sequence: [γγδεαδ] | Task_Chain: [Substitute, Substitute]
+Step 2: Task_Chain: [Substitute, Substitute] | Input_Sequence: [γγδεαδ] | → Output_Sequence: [δδγωβγ] | Task_Chain: [Substitute]
+Step 3: Task_Chain: [Substitute] | Input_Sequence: [δδγωβγ] | → Output_Sequence: [γγδεαδ] | Task_Chain: []
+Final Answer: [γγδεαδ]
+
+Example 3:
+Input Sequence: [αωαεε]
+Task Chain: [Deduplicate → Reverse → Reverse]
+Step 1: Task_Chain: [Deduplicate, Reverse, Reverse] | Input_Sequence: [αωαεε] | → Output_Sequence: [αωαε] | Task_Chain: [Reverse, Reverse]
+Step 2: Task_Chain: [Reverse, Reverse] | Input_Sequence: [αωαε] | → Output_Sequence: [εαωα] | Task_Chain: [Reverse]
+Step 3: Task_Chain: [Reverse] | Input_Sequence: [εαωα] | → Output_Sequence: [αωαε] | Task_Chain: []
+Final Answer: [αωαε]
+
+
+Now solve this problem:
+Input Sequence: [{input_sequence}]
+Task Chain: [{task_chain}]
