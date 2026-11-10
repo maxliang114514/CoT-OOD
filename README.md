@@ -1,4 +1,4 @@
-# COT-OOD
+# Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs(COT-OOD)
 
 Companion code for *"Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs"* (NeurIPS 2026). Paper: http://arxiv.org/abs/2611.06438
 
