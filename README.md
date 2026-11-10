@@ -42,3 +42,11 @@ Each sub-project is self-contained, with its own datasets, models, shared code (
 ## Citation
 
 Please cite the paper if you use this code.
+```
+@article{liang2026understanding,
+  title={Understanding the Out-of-Distribution Generalization of Chain-of-Thought Reasoning in LLMs},
+  author={Liang, Nuo-Jing and Yuan, Xiao-Tong and Zhou, Pan},
+  journal={arXiv preprint arXiv:2611.06438},
+  year={2026}
+}
+```
